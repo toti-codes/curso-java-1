@@ -14,10 +14,11 @@ public class Main {
 
         char character = 'A';
 
-        boolean conditional = Boolean.parseBoolean(args[0]);
+        boolean conditional = args.length > 0 &&
+                Arrays.asList("true", "false").contains(args[0].toLowerCase()) && Boolean.parseBoolean(args[0]);
 
         if (conditional)
-            System.out.println("Hello world! " + args[1]);
+            System.out.println("Hello world! " + ((args.length > 1) ? args[1] : ""));
         else
             System.out.println("Good bye world!");
     }
