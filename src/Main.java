@@ -1,25 +1,29 @@
+import session.Session01;
+import session.Session02;
+import session.Session03;
+
 import java.util.Arrays;
+import java.util.Date;
 
 public class Main {
     // args: ["true", "Daniel"]
     public static void main(String[] args) {
-        // Primitive types
-        byte _byte = 127;
-        short small = 32767;
-        int medium = 2147483647;
-        long large = 9223372036854775807L;
+        // Session 01
+        //Session01 session01 = new Session01();
+        //session01.run(args);
 
-        float smallDecimal = 3.14f;
-        double bigDecimal = 3.1415926538;
+        // Session 02
+        // Session02 session02 = new Session02();
+        // session02.run();
 
-        char character = 'A';
+        // Session 03
+        // Session03 session03 = new Session03();
+        // session03.run();
 
-        boolean conditional = args.length > 0 &&
-                Arrays.asList("true", "false").contains(args[0].toLowerCase()) && Boolean.parseBoolean(args[0]);
+        // Session 04
+        // Session04 session04 = new Session04();
+        // session04.run();
 
-        if (conditional)
-            System.out.println("Hello world! " + ((args.length > 1) ? args[1] : ""));
-        else
-            System.out.println("Good bye world!");
+
     }
 }
